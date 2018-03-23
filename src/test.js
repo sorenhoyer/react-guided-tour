@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import HopscotchContext from './components/HopscotchContext'
 
-describe('ExampleComponent', () => {
+describe('HopscotchContext', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+    expect(HopscotchContext).toBeTruthy();
+  });
+});

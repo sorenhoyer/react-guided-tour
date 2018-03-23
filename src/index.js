@@ -1,26 +1,13 @@
-/**
- * @class ExampleComponent
- */
+import escapeHtml from './utils/escapeHtml';
+import waitForElementVisible from './utils/waitForElementVisible';
+import { nextOnCallback } from './components/HopscotchContext';
+import HopscotchContext from './components/HopscotchContext';
+import StartButton from './components/StartButton';
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+export {
+  HopscotchContext,
+  StartButton,
+  escapeHtml,
+  waitForElementVisible,
+  nextOnCallback,
 }
